@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longuyon Auto Clean | Esthétique & Detailing Automobile</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --dark: #0f172a;
+            --gray: #1e293b;
+            --light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://unsplash.com') no-repeat center center/cover;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--dark);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary);
+            margin: 10px auto 0;
+        }
+
+        .services-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: var(--gray);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .price {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+            color: #cbd5e1;
+        }
+
+        .card ul li::before {
+            content: '✓ ';
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .contact-info {
+            background-color: var(--gray);
+            padding: 30px 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .cta-group {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--light);
+            border: 2px solid var(--light);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-top: 30px;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Longuyon <span>Auto Clean</span></div>
+        <p class="tagline">Nettoyage, préparation esthétique et detailing automobile de précision</p>
+        <a href="tel:+33600000000" class="btn">Appeler pour Réserver</a>
+    </header>
+
+    <div class="container">
+        
+        <section id="tarifs">
+            <h2>Nos Formules</h2>
+            <div class="services-list">
+                
+                <div class="card">
+                    <h3>Formule Citadine</h3>
+                    <div class="price">À partir de 60€</div>
+                    <ul>
+                        <li>Aspiration habitacle & coffre</li>
+                        <li>Dépoussiérage des plastiques</li>
+                        <li>Lavage extérieur à la main</li>
+                        <li>Séchage microfibre</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Formule Berline / SUV</h3>
+                    <div class="price">À partir de 90€</div>
+                    <ul>
+                        <li>Nettoyage intérieur en profondeur</li>
+                        <li>Shampouinage des tapis</li>
+                        <li>Lavage carrosserie haute brillance</li>
+                        <li>Nettoyage des jantes & pneus</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Prestations Detailing</h3>
+                    <div class="price">Sur Devis</div>
+                    <ul>
+                        <li>Polissage & Lustrage carrosserie</li>
+                        <li>Traitement céramique longue durée</li>
+                        <li>Rénovation d'optiques de phares</li>
+                        <li>Shampouinage complet des sièges</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact & Horaires</h2>
+            <div class="contact-info">
+                <p>📍 <strong>Adresse :</strong> 23 Rue de la Presle, 54260 Longuyon</p>
+                <p>🚗 <strong>Zone :</strong> À l'atelier ou à domicile (rayon de 20 km)</p>
+                <p>📅 <strong>Disponibilité :</strong> Sur rendez-vous uniquement</p>
+                
+                <div class="cta-group">
+                    <a href="tel:+33783633048" class="btn">📞 Appeler le 0783633048</a>
+                    <a href="sms:+33783633048?body=Bonjour,%20je%20souhaite%20un%20devis%20pour%20ma%20voiture..." class="btn btn-secondary">💬 Devis par SMS</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Longuyon Auto Clean. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
+Utilisez le code avec précaution.
